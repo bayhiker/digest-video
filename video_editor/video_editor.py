@@ -38,4 +38,4 @@ class VideoEditor:
                 )
             merged_file = self.desc_file.replace(".json", f"-{t}.mp4")
             print(f"Writing to output file {merged_file}")
-            ffmpeg.concat(*output_streams).output(merged_file).run()
+            ffmpeg.concat(*output_streams).output(merged_file, map=0).run()

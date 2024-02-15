@@ -1,10 +1,11 @@
 # This requirements are for development and testing only, not for production.
-pytest
+black==23.7.0
 coverage
 flake8
-black
 isort
-pytest-cov
 mypy
-gitchangelog
+mypy-extensions==1.0.0
 mkdocs
+pluggy==1.2.0
+pytest==7.4.2
+pytest-cov

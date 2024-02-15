@@ -1,10 +1,13 @@
 # Sample Command Line
 
-python digest_video.py -c /path/to/config.json -i /path/to/video.mp4
+```
+python digest_video.py -c /path/to/config/config_name.json -i /path/to/input/video.mp4
+```
 
 # Sample Config JSON File
 
 ```
+sample.json
 {
   "welldone": {
     "segments": [
@@ -25,4 +28,12 @@ python digest_video.py -c /path/to/config.json -i /path/to/video.mp4
     ]
   }
 }
+```
+
+After running digest_video with this config fil, the following two digest video files will be generated:
+
+```
+/path/to/config/config_name-welldone.mp4
+/path/to/config/config_name-improve.mp4
+
 ```
